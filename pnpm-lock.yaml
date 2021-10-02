@@ -12,6 +12,8 @@ specifiers:
   '@angular/platform-browser': ~12.1.1
   '@angular/platform-browser-dynamic': ~12.1.1
   '@angular/router': ~12.1.1
+  '@ngrx/store': ^12.4.0
+  '@ngrx/store-devtools': ^12.4.0
   '@types/jasmine': ~3.6.0
   '@types/node': ^12.11.1
   jasmine-core: ~3.7.0
@@ -21,6 +23,7 @@ specifiers:
   karma-jasmine: ~4.0.0
   karma-jasmine-html-reporter: ^1.5.0
   rxjs: ~6.6.0
+  todomvc-app-css: ^2.4.1
   tslib: ^2.2.0
   typescript: ~4.3.2
   zone.js: ~0.11.4
@@ -34,7 +37,10 @@ dependencies:
   '@angular/platform-browser': 12.1.5_e484ae13dc87c6c09683a80ada7d62e3
   '@angular/platform-browser-dynamic': 12.1.5_78eac561215971802d68ab8c9f465231
   '@angular/router': 12.1.5_1135d6cdbaede2853ed61d07cc14cec5
+  '@ngrx/store': 12.4.0_@angular+core@12.1.5+rxjs@6.6.7
+  '@ngrx/store-devtools': 12.4.0_@ngrx+store@12.4.0+rxjs@6.6.7
   rxjs: 6.6.7
+  todomvc-app-css: 2.4.1
   tslib: 2.3.1
   zone.js: 0.11.4
 
@@ -1598,6 +1604,28 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@ngrx/store-devtools/12.4.0_@ngrx+store@12.4.0+rxjs@6.6.7:
+    resolution: {integrity: sha512-mzT/R2gD4WaTgo1CJzRCiBeJrAcDphjqWDfIrB0Ny+Bd7OGVUsbf1jIN9dRJAA9iDXJewDiLUjKIAn/emnwg9Q==}
+    peerDependencies:
+      '@ngrx/store': 12.4.0
+      rxjs: ^6.5.3
+    dependencies:
+      '@ngrx/store': 12.4.0_@angular+core@12.1.5+rxjs@6.6.7
+      rxjs: 6.6.7
+      tslib: 2.3.1
+    dev: false
+
+  /@ngrx/store/12.4.0_@angular+core@12.1.5+rxjs@6.6.7:
+    resolution: {integrity: sha512-+kC2Ro2BmsxghHQhq4u+9HGE4BPy739werimspuqz37yUG1G3CdxMp0wuoD2M5371spUTFsXOtjKzpifOYbWbg==}
+    peerDependencies:
+      '@angular/core': ^12.0.0
+      rxjs: ^6.5.3
+    dependencies:
+      '@angular/core': 12.1.5_rxjs@6.6.7+zone.js@0.11.4
+      rxjs: 6.6.7
+      tslib: 2.3.1
+    dev: false
 
   /@ngtools/webpack/12.1.4_3bbc07e0959e8e8ac5c44c9fb6bb2db1:
     resolution: {integrity: sha512-hXc8dTnRfDB7o1Pd7a07aw0rjGmVLXU28+cTHQJliosgD3obcjfZ4QPA0k97vlQMtqVJawuShRfyiUKrpsJf8Q==}
@@ -7715,6 +7743,10 @@ packages:
       regex-not: 1.0.2
       safe-regex: 1.1.0
     dev: true
+
+  /todomvc-app-css/2.4.1:
+    resolution: {integrity: sha512-1mZYRG435VmqIw1WahBYhAJbyfH4HnRNI8EgF4ypK4R1RjwgBBvXd0N57ZwCa1lbHzYBraA6+dVyAg3GAPEACQ==}
+    dev: false
 
   /toidentifier/1.0.0:
     resolution: {integrity: sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==}
